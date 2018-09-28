@@ -1,0 +1,53 @@
+.grid-container{
+display: grid;
+grid-template-columns: 1fr ;
+/*grid-template-rows: 25% 25% 25% 25% ;*/
+/*grid-template-rows: repeat(5, 20%)*/
+grid-template-rows: repeat(9, 1fr);/*als je 3 columns bij 4 rows aan geeft dan moet het ook bij areas*/
+height: 600px;
+/*grid-gap: 10px ;*/
+
+/*grid-template-areas:
+      "logo"
+      "picture"
+      "menu"
+      "welkom"
+      "crown"
+      "facebook"
+      "archief"
+      "contact"
+      "social";
+}
+.box1{
+  grid-area: logo;
+}
+.box2{
+  grid-area: picture;
+}
+.box3{
+  grid-area: menu;
+  /*grid-column:  1/3;
+  grid-row: 1/4;
+  grid-column:  1/3;
+  grid-row: 1/4;
+  grid-column:  1 / span 2;
+  grid-row: 2 / span 2;*/
+/*}
+.box4{
+  grid-area: welkom;
+}
+.box5{
+  grid-area: welkom;
+}
+.box6{
+  grid-area: welkom;
+}
+.box7{
+  grid-area: welkom;
+}
+.box8{
+  grid-area: welkom;
+}
+.box9{
+  grid-area: welkom;
+}*/
