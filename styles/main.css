@@ -11,7 +11,7 @@ html {
 body{
   background-color: #222222;
   color: #FFFFFF;
-  font-family: 'Asap Condensed', verdana, sans-serif;
+  font-family: 'Asap Condensed', verdana, sans-serif;/*verander font*/
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -30,34 +30,30 @@ h2 {
 
 }
 
-.grid-container > div {
+.grid-item {
   padding: 0.2em 1em;
 }
-
-.grid-container > div:nth-child(1) {
+/* .grid-container > div:nth-child(1) {
+    background-color: #16a086;
+} */
+.header{
     background-color: #2a80b9;
 }
-.grid-container > div:nth-child(2) {
+.main{
     background-color: #8f44ad;
 }
-.grid-container > div:nth-child(3) {
+#menu{
     background-color: #16a086;
 }
-.grid-container > div:nth-child(4) {
+.ad1{
     background-color: #f1c40f;
 }
-.grid-container > div:nth-child(5) {
+.ad2{
     background-color: #e77e23;
 }
-.grid-container > div:nth-child(6) {
-    background-color: #e84c3d;
-}
-.grid-container > div:nth-child(7) {
+.foot1{
     background-color: #34495e;
 }
-.grid-container > div:nth-child(8) {
+.foot2{
     background-color: #2a80b9;
-}
-.grid-container > div:nth-child(9) {
-    background-color: #8f44ad;
 }
