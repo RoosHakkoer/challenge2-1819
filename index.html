@@ -10,7 +10,11 @@
 	</head>
 	<body>
 		<div class="grid-container">
-			<header class="grid-item header"><h2>header</h2>
+			<header class="grid-item header">
+				<picture class="logo">
+					<source media="(max-width: 401px)" srcset="images/logo_200.jpg">
+					<img id="logo"src="images/logo_300.jpg" alt="het logo van de Kaasspeciaalzaak">
+				</picture>
 				<div class="menutoggle">
 					<a href="#">&#9776;</a>
 					<!--code &#9776 is een hamburger menu-->
@@ -25,8 +29,14 @@
 				</ul>
 			</nav>
 	    <main class="grid-item main">
-				<h2>main</h2>
+				<!-- <h2>main</h2> -->
 				<!-- art direction -->
+				<picture>
+					<source media="(max-width: 401px)" srcset="images/winkel_360.jpg">
+					<source media="(min-width: 402px) and (max-width: 639px)" srcset="images/winkel_640.jpg">
+					<source media="(min-width: 640px)" srcset="images/winkel_800.jpg">
+					<img src="images/winkel_800.jpg" alt="de winkel van de Kaasspeciaalzaak">
+				</picture>
 				<p>Welkom bij Kaasspeciaalzaak Ed Boele in Den Haag.
 					Al een paar keer waren we de beste of bijna-beste kaasspecialist
 					van Nederland en nog steeds draaien we mee in de top.
@@ -38,10 +48,28 @@
 					Want wij hebben er kaas van gegeten.
 				</p>
 			</main>
-	    <aside class="grid-item ad1"><h2>crown</h2></aside>
-	    <aside class="grid-item ad2"><h2>facebook</h2></aside>
-	    <div class="grid-item foot1"><h2>contact</h2></div>
-	    <footer class="grid-item foot2"><h2>social</h2></div>
+	    <aside class="grid-item ad1">
+				<h2>beste</h2>
+				<picture class="beste">
+					<img src="images/beste.jpg" alt="beste kaasspecialist">
+				</picture>
+			</aside>
+	    <aside class="grid-item ad2"><h2>facebook</h2>
+				<picture>
+					<!-- <source media="(max-width: 401px)" srcset="images/.jpg">
+					<source media="(min-width: 402px) and (max-width: 639px)" srcset="images/.jpg">
+					<source media="(min-width: 640px)" srcset="images/.jpg"> -->
+					<img src="images/facebook.jpg" alt="facebook post de Kaasspeciaalzaak">
+				</picture>
+			</aside>
+	    <div class="grid-item ad3"><h2>contact</h2>
+				<picture>
+					<source media="(min-width: 640px)" srcset="images/maps.jpg">
+					<img id="map"src="images/maps.jpg" alt="">
+				</picture>
+			</div>
+			<div class="grid-item foot1"><h2>social</h2></div>
+	    <footer class="grid-item foot2"><h2>copy</h2></footer>
 		</div>
 
 	  <script type="text/javascript" src="script/main.js"></script>

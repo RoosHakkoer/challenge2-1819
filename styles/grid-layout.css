@@ -1,8 +1,8 @@
 .grid-container{
 display: grid;
 grid-template-columns: 1fr ;
-/* grid-template-rows: repeat(9, 1fr);/*als je 3 columns bij 4 rows aan geeft dan moet het ook bij areas*/ */
-height: 600px;
+/*grid-template-rows: repeat(8, 1fr);/*als je 3 columns bij 4 rows aan geeft dan moet het ook bij areas*/ */
+height: 700px;
 
 grid-template-areas:
       "title"
@@ -10,9 +10,9 @@ grid-template-areas:
       "main"
       "crown"
       "facebook"
-      "archief"
       "contact"
-      "social";
+      "social"
+      "copy";
 }
 .header{
   grid-area: title;
@@ -29,24 +29,32 @@ grid-template-areas:
 .ad2{
   grid-area: facebook;
 }
-.foot1{
+.ad3{
   grid-area: contact;
 }
-.foot2{
+.foot1{
   grid-area: social;
+}
+.foot2{
+  grid-area: copy;
 }
 header{
   display: flex;
   flex-flow: row;
   align-items: center;
 }
+.logo{
+  padding: 0.5em 1em;
+}
+
 .menutoggle{
   margin-left: auto;/*hamburger staat nu rechts*/
 }
 .menutoggle a{
   font-size: 2em;
-  color:#fff;
+  color:#E99B00;
   text-decoration: none;
+  padding-right: 0.5em;
 }
 
 .active{
@@ -84,29 +92,115 @@ nav ul li {
   list-style: none;
   justify-content: center;
   border-radius: 0.4em;
-  /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 nav ul li:hover {
-  background-color: rgba(50, 50, 50, 0.5);
+  text-shadow: 1px 1px 1px #262626;
 }
 
 nav > ul > li > a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;/*geen lijntjes bij hover*/
 }
 
-@media only screen and (min-width: 601px){
+
+@media only screen and (min-width: 401px)and (max-width: 639px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title    title"
+    "menu     menu"
+    "main     main"
+    "facebook crown"
+    "facebook contact"
+    "facebook social"
+    "copy     copy";
+  }
+  .logo{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 0em;
+  }
+  nav ul {
+      display: flex;
+      flex-flow: row /*wrap*/;/*menu items staan nu naast elkaar*/
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  nav ul li {
+      flex-grow: 1;
+  }
+  .menutoggle{
+    display: none;
+  }
+  .active, .inactive{
+    /* display: initial; */
+    max-height: initial; /*initial is zoals het normaal zou moeten doen*/
+  }
+  #map{
+    display: none;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px){
   .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10px; */
+    grid-gap: 10px;
     grid-template-areas:
     "title    title    title"
     "menu     menu     menu"
     "main     main     crown"
     "main     main     facebook"
-    "contact  contact  social";
+    "main     main     facebook"
+    "contact  contact  social"
+    "copy     copy     copy";
+  }
+  .logo{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 0em;
+  }
+  nav ul {
+      display: flex;
+      flex-flow: row /*wrap*/;/*menu items staan nu naast elkaar*/
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  nav ul li {
+      flex-grow: 1;
+  }
+  .menutoggle{
+    display: none;
+  }
+  .active, .inactive{
+    /* display: initial; */
+    max-height: initial; /*initial is zoals het normaal zou moeten doen*/
+  }
+  #map{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "title    title    title"
+    "menu     menu     menu"
+    "crown    main     facebook"
+    "contact  main     facebook"
+    "contact  main     social"
+    "copy     copy     copy";
+  }
+  .logo{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 0em;
   }
 
   nav ul {
@@ -126,4 +220,5 @@ nav > ul > li > a {
     /* display: initial; */
     max-height: initial; /*initial is zoals het normaal zou moeten doen*/
   }
+
 }

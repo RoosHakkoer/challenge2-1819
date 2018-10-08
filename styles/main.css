@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 html {
   box-sizing: border-box;
 }
@@ -9,51 +11,60 @@ html {
 }
 
 body{
-  background-color: #222222;
-  color: #FFFFFF;
-  font-family: 'Asap Condensed', verdana, sans-serif;/*verander font*/
-  text-shadow: 1px 1px 1px #000;
+  background-color: #262626;
+  color: #262626;
+  font-family: 'PT Sans', verdana, sans-serif;/*verander font*/
+  font-size: 14px;
+  /* text-shadow: 1px 1px 1px #000; */
 }
-
+p{
+  padding: 0.2em 1em;
+}
 h1 {
   text-align: center;
-  background-color: rgba(50, 50, 50, 0.5);
+  /* background-color: rgba(50, 50, 50, 0.5); */
 }
 
 h2 {
   font-size: 1em;
   font-weight: normal;
-  background-color: rgba(50, 50, 50, 0.5);
+  /* background-color: rgba(50, 50, 50, 0.5); */
   max-width: 100px;
   padding: 0.4em;
   border-radius: 0.2em;
-
+}
+img {
+  width: 100%;
+  margin: 0;
 }
 
 .grid-item {
-  padding: 0.2em 1em;
+  /* padding: 0.2em 1em; */
 }
 /* .grid-container > div:nth-child(1) {
     background-color: #16a086;
 } */
 .header{
-    background-color: #2a80b9;
+    background-color: #fff;
 }
 .main{
-    background-color: #8f44ad;
+    background-color: #fff;
 }
 #menu{
-    background-color: #16a086;
+    background-color: #E99B00;
 }
 .ad1{
-    background-color: #f1c40f;
+    background-color: #fff;
 }
 .ad2{
-    background-color: #e77e23;
+    background-color: #fff;
+}
+.ad3{
+    background-color: #fff;
 }
 .foot1{
-    background-color: #34495e;
+    background-color: #fff;
 }
 .foot2{
-    background-color: #2a80b9;
+    background-color: #E99B00;
 }
