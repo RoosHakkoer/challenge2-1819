@@ -14,23 +14,21 @@ body{
   background-color: #262626;
   color: #262626;
   font-family: 'PT Sans', verdana, sans-serif;/*verander font*/
-  font-size: 14px;
-  /* text-shadow: 1px 1px 1px #000; */
+  font-size: 16px;
 }
 p{
   padding: 0.2em 1em;
 }
 h1 {
   text-align: center;
-  /* background-color: rgba(50, 50, 50, 0.5); */
+  font-size: 20px;
 }
 
 h2 {
   font-size: 1em;
-  font-weight: normal;
-  /* background-color: rgba(50, 50, 50, 0.5); */
+  font-weight:bold;
   max-width: 100px;
-  padding: 0.4em;
+  padding: 0.4em 1em;
   border-radius: 0.2em;
 }
 img {
@@ -41,9 +39,7 @@ img {
 .grid-item {
   /* padding: 0.2em 1em; */
 }
-/* .grid-container > div:nth-child(1) {
-    background-color: #16a086;
-} */
+
 .header{
     background-color: #fff;
 }

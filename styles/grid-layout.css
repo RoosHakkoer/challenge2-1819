@@ -25,6 +25,7 @@ grid-template-areas:
 }
 .ad1{
   grid-area: crown;
+  padding-top: 1.5em;
 }
 .ad2{
   grid-area: facebook;
@@ -101,8 +102,19 @@ nav ul li:hover {
 nav > ul > li > a {
   color: #fff;
   text-decoration: none;/*geen lijntjes bij hover*/
+  font-size: 16px;
 }
-
+.icons{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+.icons >a{
+  width: 3em;
+  height: auto;
+  padding: 2px 5px;
+}
 
 @media only screen and (min-width: 401px)and (max-width: 639px){
   .grid-container{
